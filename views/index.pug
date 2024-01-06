@@ -3,8 +3,10 @@ extends layout
 block content
   ul 
     each message in messages
-      h2 #{message.user}
-      h3 #{message.text}
-      time #{message.added}
+      div(class="message")
+        h2 #{message.user}
+        h3 #{message.text}
+        time #{message.added}
+      
   a(href="/new")
     button Add new message
