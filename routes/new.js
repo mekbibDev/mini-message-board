@@ -1,7 +1,7 @@
 const router = require("express").Router();
 const { messages } = require("./index");
 router.get("/", (req, res, next) => {
-  res.render("form");
+  res.render("form", { title: "Add new message" });
 });
 
 router.post("/", (req, res, next) => {

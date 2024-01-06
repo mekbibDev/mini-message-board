@@ -100,3 +100,14 @@ button {
   border-radius: 10px;
   background: var(--secondary);
 }
+
+
+@media (max-width:600px) {
+  h1{
+    font-size: 2.369rem; 
+    text-align: center;
+  }
+  label, legend, button {
+    font-size: 1rem;
+  }
+}
